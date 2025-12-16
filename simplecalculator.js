@@ -2,8 +2,8 @@ let x ,y , operation , total
 x = parseInt(prompt("Enter your Number"));
 y = parseInt(prompt("Enter your Number"));
 
-operation =prompt("Enter operation (+, -, *, /)");
-if (operation ==="1" + "+") {
+operation =prompt("Enter operation ( +, -, *, /)");
+if (operation === "+") {
     total = x + y;
 
 }
