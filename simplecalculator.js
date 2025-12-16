@@ -21,4 +21,5 @@ else if (operation === "/") {
 else {
     total = "Invalid operation:";
 }
+
 document.write( x + " " + operation + " " + y + "=" + total);
