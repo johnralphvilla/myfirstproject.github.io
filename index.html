@@ -18,36 +18,41 @@
 </header>
 
 <main>
-
-   <script>
+<script>
 const sliders = {
     men: { index: 0 },
     women: { index: 0 }
 };
 
-function nextSlide(type) {
-    moveSlide(type, 1);
-}
-
-function prevSlide(type) {
-    moveSlide(type, -1);
-}
-
-function moveSlide(type, direction) {
+function showSlide(type) {
     const slider = document.querySelector(`[data-slider="${type}"]`);
     const slides = slider.querySelector('.slides');
     const totalSlides = slider.querySelectorAll('.slide').length;
 
-    sliders[type].index += direction;
-
+    // Ensure index wraps around
     if (sliders[type].index >= totalSlides) sliders[type].index = 0;
     if (sliders[type].index < 0) sliders[type].index = totalSlides - 1;
 
-    slides.style.transform =
-        `translateX(-${sliders[type].index * 260}px)`;
+    slides.style.transform = `translateX(-${sliders[type].index * 260}px)`;
 }
 
+function nextSlide(type) {
+    sliders[type].index++;
+    showSlide(type);
+}
+
+function prevSlide(type) {
+    sliders[type].index--;
+    showSlide(type);
+}
+
+// Optional: initialize sliders (in case you want to show the first slide explicitly)
+showSlide('men');
+showSlide('women');
 </script>
+
+
+
     <section>
 
     <h2>Men Hair Styles</h2>
