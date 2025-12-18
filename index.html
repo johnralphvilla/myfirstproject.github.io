@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Project</title>
+    <link rel="stylesheet" href="css folders/main.css">
+</head>
+<body>
+<header>
+<h1>Care Salon</h1>
+<h2>Created By Ralph Villa</h2>
+</header>
+<form id="collectdata">
+    <fieldset>
+        <legend>Comment Form (<span>requires*</span>)</legend>
+        <p>Your Name:</p>
+        <input type="text" id="fname" name="fname" placeholder="First name" required>
+        <input type="text" id="lname" name="lname" placeholder="Last name" required><br><br>
+
+        <p>Your Email:</p>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <lable> Time for Appomients 8:00 am - 8: 00 pm</lable>
+        <select id="time">
+            <option>Minimum 2hour</option>
+            <option value="8am-10am"> 8am-10am</option>
+            <option value="10am-12pm">10am-12pm</option>
+            <option value="12-2pm">not available</option>
+            <option value="2pm-4pm">2pm-4pm</option>
+            <option value="4pm-6m ">4pm-6m</option>
+            <option value="6pm-8pm ">6pm-8pm</option>
+            <option value="contact">Contact us for private service</option>
+            
+            
+
+        </select>
+
+
+        <label>Reason for Appoiments</label>
+        <select id="subjects">
+            <option value="">Please Select One</option>
+            <option value="Nail">Nail </option>
+            <option value="Hair">Hair </option>
+            <option value="Hair&Nail">Hair&Nail</option>
+        </select><br><br>
+        
+        <label for="comments">Comments</label><br>
+        <textarea id="comments" rows="5" cols="50"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </fieldset>
+</form>
+
+<script>
+document.getElementById("collectdata").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Get existing data array from localStorage or create new
+    let allData = JSON.parse(localStorage.getItem("allFormData")) || [];
+
+    // Collect form data
+    const data = {
+        fname: document.getElementById("fname").value,
+        lname: document.getElementById("lname").value,
+        email: document.getElementById("email").value,
+        time: document.getElementById("time").value,
+        subjects: document.getElementById("subjects").value,
+        comments: document.getElementById("comments").value
+    };
+
+    // Add new data to array
+    allData.push(data);
+
+    // Save updated array
+    localStorage.setItem("allFormData", JSON.stringify(allData));
+
+    // Redirect to table page
+    window.location.href = "datatables/data.html";
+});
+</script>
+
+</body>
+</html>
