@@ -19,7 +19,7 @@
 const allData = JSON.parse(localStorage.getItem("allFormData")) || [];
 
 const tableBody = document.getElementById("tableBody");
-const table = document.querySelector('#Appoinments');
+
 const resetBtn = document.getElementById('resetBtn');
 
 function renderTable(){
@@ -44,11 +44,11 @@ allData.forEach(data => {
 renderTable();
 
 
-    resetBtn.addEventListener( 'click', () =>{
+    resetBtn.addEventListener( 'click', () => {
     const password = prompt("Enter Password to Reset the Table ");
     const correctPassword="fart";
     
-    if(password === correctPassword){
+    if(password === correctPassword) {
         tableBody.innerHTML= '';
         localStorage.removeItem("allFormData");
         alert("Table has been Reset");
