@@ -18,26 +18,50 @@
 </header>
 
 <main>
+
+   <script src="datatables/JavaScript"></script>
     <section>
 
-        </section>
-    <section>
-    <section>
-        <div class="gallery">
-            <figure>
-                <img src="img/mhair.jpg" width="250" height="250">
-                <figcaption>Man Hair Styles</figcaption>
+    <h2>Men Hair Styles</h2>
+    <div class="slider" data-slider="men">
+        <button class="nav prev" onclick="prevSlide('men')">&#10094;</button>
+
+        <div class="slides">
+            <figure class="slide">
+                <img src="img/mhair.jpg" alt="Men Hair 1" width="250px" height="250">
             </figure>
-
-           
+            <figure class="slide">
+                <img src="img/mhair2.jpg" alt="Men Hair 2">
+            </figure>
+            <figure class="slide">
+                <img src="img/mhair3.jpg" alt="Men Hair 3">
+            </figure>
         </div>
-         <figure>
-                <img src="img/fhair.jpg" width="250" height="250">
-                <figcaption>Woman Hair Styles</figcaption>
-             </figure>
 
-        
-    </section>
+        <button class="nav next" onclick="nextSlide('men')">&#10095;</button>
+    </div>
+
+    <h2>Women Hair Styles</h2>
+    <div class="slider" data-slider="women">
+        <button class="nav prev" onclick="prevSlide('women')">&#10094;</button>
+
+        <div class="slides">
+            <figure class="slide">
+                <img src="img/fhair.jpg" alt="Women Hair 1">
+            </figure>
+            <figure class="slide">
+                <img src="img/fhair2.jpg" alt="Women Hair 2">
+            </figure>
+            <figure class="slide">
+                <img src="img/fhair3.jpg" alt="Women Hair 3">
+            </figure>
+        </div>
+
+        <button class="nav next" onclick="nextSlide('women')">&#10095;</button>
+    </div>
+
+</section>
+
     <form id="collectdata">
         <fieldset>
             <legend>Comment Form (<span>requires*</span>)</legend>
