@@ -2,87 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="forms, css,  and JavaScript ">
-    <meta name="Simple website">
-    <meta name="author" content="John Ralph Villa">
-    
-    <title>My first projects </title>
-    <link rel="stylesheet" href="css folders/main.css">
-
+    <title>My First Project</title>
 </head>
 <body>
-    <header>
-        <h1> My First Project </h1>
-        <h2> Created By Ralph Villa</h2>
-    </header>
-<section>
-    <nav>
-    <ul>
 
-        <li><a href="datatables/data.html"> click here to ensure you appoinment is cofirmed</a></li>
-    </ul>
-
-    </nav>
-</section>
+<h1>My First Project</h1>
+<h2>Created By Ralph Villa</h2>
 
 <form id="collectdata">
     <fieldset>
         <legend>Comment Form (<span>requires*</span>)</legend>
-        <p > Your Name:</p>
-        <label for="fname" ><span>*</span></label>
+        <p>Your Name:</p>
         <input type="text" id="fname" name="fname" placeholder="First name" required>
-        <label for="lname"><span>*</span></label>
-        <input type="text" id="lname" name="lname" placeholder="Last name"><br><br>
-        <p style="margin:0;">Your Email:</p>
-        <label for="email"><span>*</span></label>
+        <input type="text" id="lname" name="lname" placeholder="Last name" required><br><br>
+
+        <p>Your Email:</p>
         <input type="email" id="email" name="email" required><br><br>
-        
-        <br>
-        <select name="subjects" id="subjects">
-            <option value="0"> please Select One</option>
+
+        <label>Subject of comments</label>
+        <select id="subjects">
+            <option value="">Please Select One</option>
             <option value="a">a</option>
-            <option value="b" >b</option>
+            <option value="b">b</option>
             <option value="c">c</option>
-        </select>
-        <br>
+        </select><br><br>
 
-        <label for="comments">Comments </label><br>
-        <textarea id="comments" name="comments" rows="10" cols="100"> </textarea>
-        <br><br>
-        <button >Submit</button>
+        <label for="comments">Comments</label><br>
+        <textarea id="comments" rows="5" cols="50"></textarea><br><br>
 
+        <button type="submit">Submit</button>
     </fieldset>
-
 </form>
+
 <script>
-    getElementById("collectdata").adddEventListener(submit, function(e)
-    {e.preEventDefault();
+document.getElementById("collectdata").addEventListener("submit", function(e) {
+    e.preventDefault();
 
+    // Get existing data array from localStorage or create new
+    let allData = JSON.parse(localStorage.getItem("allFormData")) || [];
 
-        const data = {
-            fname:document.getElementById("fname").value,
-            lname:document.getElementById("lname").value,
-            email:document.getElementById("email").value,
-            subject:document.getElementById("subjects").value,
-            comments:document.getElementById("comments").value
-            
+    // Collect form data
+    const data = {
+        fname: document.getElementById("fname").value,
+        lname: document.getElementById("lname").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subjects").value,
+        comments: document.getElementById("comments").value
+    };
 
+    // Add new data to array
+    allData.push(data);
 
-        };
+    // Save updated array
+    localStorage.setItem("allFormData", JSON.stringify(allData));
 
-        localStorage.setItem( "formData", JSON.stringify(data));
-        window.location.href = "datatables/data.html";
-
-    }
-
-
-
-);
-
-
+    // Redirect to table page
+    window.location.href = "datatables/data.html";
+});
 </script>
-
-
 
 </body>
 </html>
