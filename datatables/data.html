@@ -48,8 +48,8 @@ renderTable();
     const password = prompt("Enter Password to Reset the Table ");
     const correctPassword="fart";
     
-    if(passwor === correctPassword){
-        tablebody.innerHTML= '';
+    if(password === correctPassword){
+        tableBody.innerHTML= '';
         localStorage.removeItem("allFormData");
         alert("Table has been Reset");
 
