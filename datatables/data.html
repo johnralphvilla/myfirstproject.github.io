@@ -1,4 +1,4 @@
-<table border="1" id="reset">
+<table border="1" id="Appoinments">
     <thead> 
          <tr>   
         <th>First Name</th>
@@ -31,7 +31,18 @@ allData.forEach(data => {
             <td>${data.comments}</td>
         </tr>
     `;
-    tableBody.innerHTML += row; // append each row
+    tableBody.innerHTML += row; 
+
+    const table = document.getElementById('Appoinments');
+    const resetBtn = document.getElementById('resetBtn');
+
+    resetBtn.addEventListener( 'click', function(){
+
+        const tbody=table.querySelector('tbody');
+        tbody.innerHTML='';
+
+    })
+
 });
 </script>
 
