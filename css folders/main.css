@@ -1,7 +1,7 @@
 body{
     margin:0;
     font-family:Verdana;
-    background: linear-gradient(to bottom,rgba(232, 15, 232, 0.62),rgba(232, 15, 232, 0.5)),
+    background: linear-gradient(45deg,lightblue, blue),
     url("../img/tclogo.png") ;
     background-size: cover;
 
@@ -13,7 +13,7 @@ header {
     width: 100%;
     left: 0;
 
-    background: linear-gradient(to top, pink, red);
+    background: linear-gradient(90deg, purple, violet);
     padding: 10px;
     box-shadow: 0 4px 8px 12px rgba(230, 7, 7, 0.71), 0 6px 20px 0 rgb(89, 2, 2);
     border: 5px solid green;
