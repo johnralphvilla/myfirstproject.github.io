@@ -11,27 +11,38 @@
 <h2>Created By Ralph Villa</h2>
 
 </header>
-<section>
 
-    <nav>
-    <ul>
-        <li> <a href="datatables/data.html">Appoinment Tables</a></li>
-    </ul>
-</nav>
-</section>
-<section>
-<form id="collectdata">
-    <fieldset>
-        <legend>Comment Form (<span>requires*</span>)</legend>
-        <p>Your Name:</p>
-        <input type="text" id="fname" name="fname" placeholder="First name" required>
-        <input type="text" id="lname" name="lname" placeholder="Last name" required><br><br>
+<main>
+    <section>
 
-        <p>Your Email:</p>
-        <input type="email" id="email" name="email" required><br><br>
+         <nav>
+            <ul>
+                <li> <a href="datatables/data.html">Appoinment Tables</a></li>
+            </ul>
+        </nav>
+        </section>
+    <section>
+    <section>
+        <figure>
 
-        <lable> Time for Appomients 8:00 am - 8: 00 pm</lable>
-        <select id="time">
+            <img src="img/mhair.jpg">
+            <figcaption>Man Hair Styles</figcaption>
+        </figure>  
+      
+        
+    </section>
+    <form id="collectdata">
+        <fieldset>
+            <legend>Comment Form (<span>requires*</span>)</legend>
+            <p>Your Name:</p>
+            <input type="text" id="fname" name="fname" placeholder="First name" required>
+            <input type="text" id="lname" name="lname" placeholder="Last name" required><br><br>
+
+            <p>Your Email:</p>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <lable> Time for Appomients 8:00 am - 8: 00 pm</lable>
+            <select id="time">
             <option>Minimum 2hour</option>
             <option value="8am-10am"> 8am-10am</option>
             <option value="10am-12pm">10am-12pm</option>
@@ -44,6 +55,7 @@
             
 
         </select>
+        <br><br>
 
 
         <label>Reason for Appoiments</label>
@@ -89,5 +101,9 @@ document.getElementById("collectdata").addEventListener("submit", function(e) {
 });
 </script>
 </section>
+</main>
+
+
+
 </body>
 </html>
