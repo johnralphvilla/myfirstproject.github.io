@@ -17,24 +17,17 @@
 <script>
 const data = JSON.parse(localStorage.getItem("formData"));
 
-if (data){
-    const row=`
-    
+if (data) {
+    const row = `
         <tr>
-            <td>${data.fname} </td>
-            <td>${data.lastname}</td>
+            <td>${data.fname}</td>
+            <td>${data.lname}</td>
             <td>${data.email}</td>
             <td>${data.subjects}</td>
             <td>${data.comments}</td>
-
-
         </tr>
-    
-    
-    
     `;
-document.getElementById("tableBody").innerHTML=row;
-
-} 
-
+    document.getElementById("tableBody").innerHTML = row;
+}
 </script>
+
