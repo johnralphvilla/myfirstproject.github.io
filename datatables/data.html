@@ -20,6 +20,9 @@ const allData = JSON.parse(localStorage.getItem("allFormData")) || [];
 
 const tableBody = document.getElementById("tableBody");
 
+
+function renderTable(){
+    tableBody.innerHTML = '';
 allData.forEach(data => {
     const row = `
         <tr>
@@ -44,6 +47,7 @@ allData.forEach(data => {
     })
 
 });
+}
 </script>
 
 
