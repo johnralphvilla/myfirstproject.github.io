@@ -25,7 +25,7 @@
     <meta  name="description" content="This is is Forms for Name, Email and A comment box">
 </head>
 <body>
-<form method="get" action="">
+<form id="collectdata">
     <fieldset>
         <legend>Comment Form (<span>requires*</span>)</legend>
         <p > Your Name:</p>
@@ -54,7 +54,30 @@
     </fieldset>
 
 </form>
+<script>
+    getElementById("collectdata").adddEventListener(submit, function(e)
+    {e.preEventDefault().
 
+
+        const data = {
+            fname:fname.value,
+            lname:lname.value,
+            email:email.value,
+            subject:subject.value,
+            comments:comments.value
+            
+
+
+        };
+
+
+    }
+
+
+);
+
+
+</script>
 </body>
 </html>
 
