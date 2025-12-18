@@ -8,3 +8,8 @@ header {
     background-color: aqua;
     text-align: center;
 }
+form {
+    border: 2px solid green;
+    border-radius: 10px;
+    
+}
