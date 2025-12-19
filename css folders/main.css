@@ -161,7 +161,7 @@ main {
 
 
 .box {
-    float: left;
+    float: center;
     
     border: 2px solid black;
     padding: 10px ;
@@ -172,7 +172,7 @@ main {
 
 }
 .box2{
-    float: right;
+    float: center;
      border: 2px solid black;
     padding: 10px ;
     margin:10px 200px 10px 0;
@@ -200,7 +200,7 @@ fieldset{
 .box3{
     border:2px solid pink;
     border-radius: 15px;
-    float: left;
+    float: center;
     margin: 10px 100px 10px 100px;
     padding:10px;
 
