@@ -165,6 +165,6 @@ main {
     border: 2px solid black;
 
 }
-#WRAP{
-    position: relative;
+form{
+    clear:both;
 }
