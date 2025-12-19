@@ -197,4 +197,10 @@ fieldset{
     border:2px solid red;
     margin: 20px 0 20px 0;
 }
+.box3{
+    border:2px solid pink;
+    border-radius: 15px;
+    
 
+
+}
