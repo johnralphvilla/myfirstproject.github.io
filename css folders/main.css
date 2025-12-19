@@ -172,7 +172,14 @@ main {
 
 }
 .box2{
-   
+    float: center;
+     border: 2px solid black;
+    padding: 0 ;
+    margin:auto;
+    height: 450px ;
+    width: 450px;
+    text-align: center;
+
 }
 form{
     clear:both;
