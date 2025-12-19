@@ -27,7 +27,7 @@
                     const slider = {
                         men: { index: 0 },
                         women: { index: 0 }
-                        
+
 
                     };
 
@@ -115,7 +115,7 @@
             <div>
                 <h1 class="border">Beard & Mustache styles</h1>
                 <script>
-                    const sliders= {
+                    const sliders = {
                         beard: { index: 0 },
 
                     };
@@ -152,28 +152,33 @@
 
 
 
-                <div class="slides">
-
-                    <figure class="slide" data-slider="beard">
-                        <img src="" alt="option 1" width="250px" height="250">
-                        <figcaption>Fade</figcaption>
-                    </figure>
-                    <figure class="slide">
-                        <img src="" alt="option 1" width="250px" height="250">
-                        <figcaption>Fade</figcaption>
-                    </figure>
-                    <figure class="slide">
-                        <img src="" alt="option 1" width="250px" height="250">
-                        <figcaption>Fade</figcaption>
-                    </figure>
-                    <figure class="slide">
-                        <img src="" alt="option 1" width="250px" height="250">
-                        <figcaption>Fade</figcaption>
-                    </figure>
-                    <figure class="slide">
-                        <img src="" alt="option 1" width="250px" height="250">
-                        <figcaption>Fade</figcaption>
-                    </figure>
+                <div class="slider" data-slider="beard">
+                    <button class="nav prev" onclick="prevSlide('beard')">&#10094;</button>
+                    <div class="slides" >
+                        
+                        <figure >
+                           
+                            <img src="" alt="option 1" width="250px" height="250">
+                            <figcaption>Fade</figcaption>
+                        </figure>
+                        <figure class="slide">
+                            <img src="" alt="option 1" width="250px" height="250">
+                            <figcaption>Fade</figcaption>
+                        </figure>
+                        <figure class="slide">
+                            <img src="" alt="option 1" width="250px" height="250">
+                            <figcaption>Fade</figcaption>
+                        </figure>
+                        <figure class="slide">
+                            <img src="" alt="option 1" width="250px" height="250">
+                            <figcaption>Fade</figcaption>
+                        </figure>
+                        <figure class="slide">
+                            <img src="" alt="option 1" width="250px" height="250">
+                            <figcaption>Fade</figcaption>
+                        </figure>
+                        <button class="nav next" onclick="nextSlide('beard')" > &#10094;</button>
+                    </div>
                 </div>
             </div>
 
