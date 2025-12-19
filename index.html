@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Care Salon</title>
@@ -8,218 +9,238 @@
 
 <body>
 
-<header>
-    <h1>Care Salon</h1>
-    <h2>Created By Ralph Villa</h2>
+    <header>
+        <h1>Care Salon</h1>
+        <h2>Created By Ralph Villa</h2>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="datatables/data.html">Check Weekly Appointment Availability</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="datatables/data.html">Check Weekly Appointment Availability</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
+    <main>
 
-    <!-- MEN HAIR -->
-    <section class="service-section"  class="box2">
-        <h2 class="border">Men’s Hair Cut Styles</h2>
+        <!-- MEN HAIR -->
+        <section class="service-section" class="box2">
+            <h2 class="border">Men’s Hair Cut Styles</h2>
 
-        <div class="slider" data-slider="men">
-            <button class="nav prev" onclick="prevSlide('men')">&#10094;</button>
+            <div class="slider" data-slider="men">
+                <button class="nav prev" onclick="prevSlide('men')">&#10094;</button>
 
-            <div class="slides">
-                <figure class="slide">
-                    <img src="img/malehaircuts/mhair.jpg" alt="Fade" width="250" height="250">
-                    <figcaption>Fade</figcaption>
-                </figure>
+                <div class="slides">
+                    <figure class="slide">
+                        <img src="img/malehaircuts/mhair.jpg" alt="Fade" width="250" height="250">
+                        <figcaption>Fade</figcaption>
+                    </figure>
 
-                <figure class="slide">
-                    <img src="img/malehaircuts/R.jpg" alt="Line Cut" width="250" height="250">
-                    <figcaption>Line Cut</figcaption>
-                </figure>
+                    <figure class="slide">
+                        <img src="img/malehaircuts/R.jpg" alt="Line Cut" width="250" height="250">
+                        <figcaption>Line Cut</figcaption>
+                    </figure>
 
-                <figure class="slide">
-                    <img src="img/malehaircuts/mhair3.png" alt="Fresh Cut" width="250" height="250">
-                    <figcaption>Fresh Cut</figcaption>
-                </figure>
+                    <figure class="slide">
+                        <img src="img/malehaircuts/mhair3.png" alt="Fresh Cut" width="250" height="250">
+                        <figcaption>Fresh Cut</figcaption>
+                    </figure>
+                </div>
+
+                <button class="nav next" onclick="nextSlide('men')">&#10095;</button>
             </div>
+        </section>
 
-            <button class="nav next" onclick="nextSlide('men')">&#10095;</button>
-        </div>
-    </section>
+        <!-- WOMEN HAIR -->
+        <section class="service-section" class="box2">
+            <h2 class="border">Women Hair Styles</h2>
 
-    <!-- WOMEN HAIR -->
-    <section class="service-section" class="box2">
-        <h2 class="border">Women Hair Styles</h2>
+            <div class="slider" data-slider="women">
+                <button class="nav prev" onclick="prevSlide('women')">&#10094;</button>
 
-        <div class="slider" data-slider="women">
-            <button class="nav prev" onclick="prevSlide('women')">&#10094;</button>
+                <div class="slides">
+                    <figure class="slide">
+                        <img src="img/femalestyle/fhair.jpg" alt="Blonde Dye">
+                        <figcaption>Blonde Dye</figcaption>
+                    </figure>
 
-            <div class="slides">
-                <figure class="slide">
-                    <img src="img/femalestyle/fhair.jpg" alt="Blonde Dye">
-                    <figcaption>Blonde Dye</figcaption>
-                </figure>
+                    <figure class="slide">
+                        <img src="img/femalestyle/fhair2.jpg" alt="Hair Dye">
+                        <figcaption>Hair Dye</figcaption>
+                    </figure>
 
-                <figure class="slide">
-                    <img src="img/femalestyle/fhair2.jpg" alt="Hair Dye">
-                    <figcaption>Hair Dye</figcaption>
-                </figure>
+                    <figure class="slide">
+                        <img src="img/femalestyle/fhair3.avif" alt="Hair Style">
+                        <figcaption>Hair Style</figcaption>
+                    </figure>
+                </div>
 
-                <figure class="slide">
-                    <img src="img/femalestyle/fhair3.avif" alt="Hair Style">
-                    <figcaption>Hair Style</figcaption>
-                </figure>
+                <button class="nav next" onclick="nextSlide('women')">&#10095;</button>
             </div>
+        </section>
 
-            <button class="nav next" onclick="nextSlide('women')">&#10095;</button>
-        </div>
-    </section>
+        <!-- BEARD -->
+        <section class="service-section" class="box2">
+            <h2 class="border">Beard & Mustache Styles</h2>
 
-    <!-- BEARD -->
-    <section class="service-section" class="box2">
-        <h2 class="border">Beard & Mustache Styles</h2>
+            <div class="slider" data-slider="beard">
+                <button class="nav prev" onclick="prevSlide('beard')">&#10094;</button>
 
-        <div class="slider" data-slider="beard">
-            <button class="nav prev" onclick="prevSlide('beard')">&#10094;</button>
+                <div class="slides">
+                    <figure class="slide">
+                        <img src="img/beards/b2.webp" alt="Option 1" width="250" height="250">
+                        <figcaption>Option 1</figcaption>
+                    </figure>
 
-            <div class="slides">
-                <figure class="slide">
-                    <img src="img/beards/b2.webp" alt="Option 1" width="250" height="250">
-                    <figcaption>Option 1</figcaption>
-                </figure>
+                    <figure class="slide">
+                        <img src="img/beards/b1.jpeg" alt="Option 2" width="250" height="250">
+                        <figcaption>Option 2</figcaption>
+                    </figure>
 
-                <figure class="slide">
-                    <img src="img/beards/b1.jpeg" alt="Option 2" width="250" height="250">
-                    <figcaption>Option 2</figcaption>
-                </figure>
+                    <figure class="slide">
+                        <img src="img/beards/b3.webp" alt="Option 3" width="250" height="250">
+                        <figcaption>Option 3</figcaption>
+                    </figure>
+                </div>
 
-                <figure class="slide">
-                    <img src="img/beards/b3.webp" alt="Option 3" width="250" height="250">
-                    <figcaption>Option 3</figcaption>
-                </figure>
+                <button class="nav next" onclick="nextSlide('beard')">&#10095;</button>
             </div>
+        </section>
 
-            <button class="nav next" onclick="nextSlide('beard')">&#10095;</button>
-        </div>
-    </section>
+        <!-- NAILS -->
+        <section class="service-section">
 
-    <!-- NAILS -->
-    <section class="service-section">
-        <h2 class="border">Nail Selection</h2>
+            <div class="nail-grid">
 
-        <div class="nail-grid">
-            <figure>
-                <img src="img/nail/nail1.webp" alt="Nail Option 1" width="250">
-                <figcaption>Option 1</figcaption>
-            </figure>
+                <h2 class="border">Nail Selection</h2>
 
-            <figure>
-                <img src="img/nail/nail2.jpg" alt="Nail Option 2" width="250">
-                <figcaption>Option 2</figcaption>
-            </figure>
+                <div class="slider" data-slider="nail">
+                    <button class="nav prev" onclick="prevSlide('nail')"> &#10094;  </button>
 
-            <figure>
-                <img src="img/nail/nail3.jpg" alt="Nail Option 3" width="250">
-                <figcaption>Option 3</figcaption>
-            </figure>
-        </div>
-    </section>
+                    <div>
+                        <figure>
+                            <img src="img/nail/nail1.webp" alt="Nail Option 1" width="250">
+                            <figcaption>Option 1</figcaption>
+                        </figure>
 
-    <!-- FORM -->
-    <form id="collectdata">
-        <fieldset>
-            <legend>Book Your Appointment (Required*)</legend>
+                        <figure>
+                            <img src="img/nail/nail2.jpg" alt="Nail Option 2" width="250">
+                            <figcaption>Option 2</figcaption>
+                        </figure>
 
-            <label>First Name</label>
-            <input type="text" id="fname" required>
+                        <figure>
+                            <img src="img/nail/nail3.jpg" alt="Nail Option 3" width="250">
+                            <figcaption>Option 3</figcaption>
+                        </figure>
+                    </div>
+                    <button class="nac next" onclick="nextSlide('nail')"> &#10095; </button>
+                </div>
 
-            <label>Last Name</label>
-            <input type="text" id="lname" required>
 
-            <label>Email</label>
-            <input type="email" id="email" required>
+            </div>
+        </section>
 
-            <label>Appointment Time</label>
-            <select id="time" required>
-                <option value="">Select Time</option>
-                <option>8am - 10am</option>
-                <option>10am - 12pm</option>
-                <option>2pm - 4pm</option>
-                <option>4pm - 6pm</option>
-                <option>6pm - 8pm</option>
-            </select>
+        <!-- FORM -->
+        <form id="collectdata">
+            <fieldset>
+                <legend>Book Your Appointment (Required*)</legend>
 
-            <label>Service</label>
-            <select id="subjects" required>
-                <option value="">Select Service</option>
-                <option>Nail</option>
-                <option>Hair</option>
-                <option>Hair & Nail</option>
-            </select>
+                <label>First Name</label>
+                <input type="text" id="fname" required>
 
-            <label>Comments</label>
-            <textarea id="comments" rows="4"></textarea>
+                <br>
+                <br>
+                <label>Last Name</label>
+                <input type="text" id="lname" required>
 
-            <button type="submit">Submit</button>
-        </fieldset>
-    </form>
+                <br>
+                <br>
 
-</main>
+                <label>Email</label>
+                <input type="email" id="email" required>
 
-<script>
-const sliders = {
-    men: { index: 0 },
-    women: { index: 0 },
-    beard: { index: 0 }
-};
+                <label>Appointment Time</label>
+                <select id="time" required>
+                    <option value="">Select Time</option>
+                    <option>8am - 10am</option>
+                    <option>10am - 12pm</option>
+                    <option>2pm - 4pm</option>
+                    <option>4pm - 6pm</option>
+                    <option>6pm - 8pm</option>
+                </select>
+                <br>
+                <br>
+                <label>Service</label>
+                <select id="subjects" required>
+                    <option value="">Select Service</option>
+                    <option>Nail</option>
+                    <option>Hair</option>
+                    <option>Hair & Nail</option>
+                </select>
+                <br>
+                <label>Comments</label>
+                <textarea id="comments" rows="4"></textarea>
 
-function showSlide(type) {
-    const slider = document.querySelector(`[data-slider="${type}"]`);
-    const slides = slider.querySelector('.slides');
-    const total = slider.querySelectorAll('.slide').length;
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
 
-    if (sliders[type].index >= total) sliders[type].index = 0;
-    if (sliders[type].index < 0) sliders[type].index = total - 1;
+    </main>
 
-    slides.style.transform = `translateX(-${sliders[type].index * 260}px)`;
-}
+    <script>
+        const sliders = {
+            men: { index: 0 },
+            women: { index: 0 },
+            beard: { index: 0 },
+            nail: {index: 0}
+        };
 
-function nextSlide(type) {
-    sliders[type].index++;
-    showSlide(type);
-}
+        function showSlide(type) {
+            const slider = document.querySelector(`[data-slider="${type}"]`);
+            const slides = slider.querySelector('.slides');
+            const total = slider.querySelectorAll('.slide').length;
 
-function prevSlide(type) {
-    sliders[type].index--;
-    showSlide(type);
-}
+            if (sliders[type].index >= total) sliders[type].index = 0;
+            if (sliders[type].index < 0) sliders[type].index = total - 1;
 
-showSlide('men');
-showSlide('women');
-showSlide('beard');
+            slides.style.transform = `translateX(-${sliders[type].index * 260}px)`;
+        }
 
-document.getElementById("collectdata").addEventListener("submit", function(e) {
-    e.preventDefault();
+        function nextSlide(type) {
+            sliders[type].index++;
+            showSlide(type);
+        }
 
-    let allData = JSON.parse(localStorage.getItem("allFormData")) || [];
+        function prevSlide(type) {
+            sliders[type].index--;
+            showSlide(type);
+        }
 
-    allData.push({
-        fname: fname.value,
-        lname: lname.value,
-        email: email.value,
-        time: time.value,
-        subjects: subjects.value,
-        comments: comments.value
-    });
+        showSlide('men');
+        showSlide('women');
+        showSlide('beard');
+        showSlide('nail');
 
-    localStorage.setItem("allFormData", JSON.stringify(allData));
-    window.location.href = "datatables/data.html";
-});
-</script>
+        document.getElementById("collectdata").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let allData = JSON.parse(localStorage.getItem("allFormData")) || [];
+
+            allData.push({
+                fname: fname.value,
+                lname: lname.value,
+                email: email.value,
+                time: time.value,
+                subjects: subjects.value,
+                comments: comments.value
+            });
+
+            localStorage.setItem("allFormData", JSON.stringify(allData));
+            window.location.href = "datatables/data.html";
+        });
+    </script>
 
 </body>
+
 </html>

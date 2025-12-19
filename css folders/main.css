@@ -71,7 +71,11 @@ main {
     padding-right: 20px;
     padding-bottom: 40px;
 }
-
+main section{
+    border:2px solid blue;
+    border-radius: 10px;
+    
+}
 .slider {
     position: relative;
     width: 260px;
@@ -157,30 +161,10 @@ main {
 .prev { left: 0; }
 .next { right: 0; }
 
-.nav:hover { background: violet; }
+.nav:hover { background: violet;
+ }
 
 
-.box {
-    float: center;
-    
-    border: 2px solid black;
-    padding: 0 ;
-    margin:auto;
-    height: 450px ;
-    width: 450px;
-    text-align: center;
-
-}
-.box2{
-    float: center;
-     border: 2px solid black;
-    padding: 0 ;
-    margin:auto;
-    height: 450px ;
-    width: 450px;
-    text-align: center;
-
-}
 form{
     clear:both;
 }
