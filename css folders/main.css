@@ -161,9 +161,11 @@ main {
 
 
 .box {
-    float: inline-start;
+    float: center;
     border: 2px solid black;
-
+    padding: 10px ;
+    margin:10px;
+    
 }
 form{
     clear:both;
