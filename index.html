@@ -21,93 +21,93 @@
 
     <main>
         <fieldset>
-        <div class="border">
-            <h1>Hair Style Men  & Women1</h1>
-            <script>
-                const sliders = {
-                    men: { index: 0 },
-                    women: { index: 0 }
-                };
+            <div class="border">
+                <h1>Hair Style Men & Women1</h1>
+                <script>
+                    const sliders = {
+                        men: { index: 0 },
+                        women: { index: 0 }
+                    };
 
-                function showSlide(type) {
-                    const slider = document.querySelector(`[data-slider="${type}"]`);
-                    const slides = slider.querySelector('.slides');
-                    const totalSlides = slider.querySelectorAll('.slide').length;
+                    function showSlide(type) {
+                        const slider = document.querySelector(`[data-slider="${type}"]`);
+                        const slides = slider.querySelector('.slides');
+                        const totalSlides = slider.querySelectorAll('.slide').length;
 
-                    // Ensure index wraps around
-                    if (sliders[type].index >= totalSlides) sliders[type].index = 0;
-                    if (sliders[type].index < 0) sliders[type].index = totalSlides - 1;
+                        // Ensure index wraps around
+                        if (sliders[type].index >= totalSlides) sliders[type].index = 0;
+                        if (sliders[type].index < 0) sliders[type].index = totalSlides - 1;
 
-                    slides.style.transform = `translateX(-${sliders[type].index * 260}px)`;
-                }
+                        slides.style.transform = `translateX(-${sliders[type].index * 260}px)`;
+                    }
 
-                function nextSlide(type) {
-                    sliders[type].index++;
-                    showSlide(type);
-                }
+                    function nextSlide(type) {
+                        sliders[type].index++;
+                        showSlide(type);
+                    }
 
-                function prevSlide(type) {
-                    sliders[type].index--;
-                    showSlide(type);
-                }
+                    function prevSlide(type) {
+                        sliders[type].index--;
+                        showSlide(type);
+                    }
 
-                // Optional: initialize sliders (in case you want to show the first slide explicitly)
-                showSlide('men');
-                showSlide('women');
-            </script>
+                    // Optional: initialize sliders (in case you want to show the first slide explicitly)
+                    showSlide('men');
+                    showSlide('women');
+                </script>
 
 
 
-            <section class="box">
-                <h2>Men Hair Styles</h2>
+                <section class="box">
+                    <h2>Men Hair Styles</h2>
 
-                <div class="slider" data-slider="men" class="box">
-                    <button class="nav prev" onclick="prevSlide('men')">&#10094;</button>
+                    <div class="slider" data-slider="men" class="box">
+                        <button class="nav prev" onclick="prevSlide('men')">&#10094;</button>
 
-                    <div class="slides">
+                        <div class="slides">
 
-                        <figure class="slide">
-                            <img src="img/malehaircuts/mhair.jpg" alt="Men Hair 1" width="250px" height="250">
-                            <figcaption>Fade</figcaption>
-                        </figure>
-                        <figure class="slide">
-                            <img src="img/malehaircuts/R.jpg" alt="Men Hair 2 " width="250px" height="250px">
-                            <figcaption>line</figcaption>
-                        </figure>
-                        <figure class="slide">
-                            <img src="img/malehaircuts/mhair3.png" alt="Men Hair 3" width="250px" height="250px">
-                            <figcaption> Fresh cut</figcaption>
-                        </figure>
+                            <figure class="slide">
+                                <img src="img/malehaircuts/mhair.jpg" alt="Men Hair 1" width="250px" height="250">
+                                <figcaption>Fade</figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="img/malehaircuts/R.jpg" alt="Men Hair 2 " width="250px" height="250px">
+                                <figcaption>line</figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="img/malehaircuts/mhair3.png" alt="Men Hair 3" width="250px" height="250px">
+                                <figcaption> Fresh cut</figcaption>
+                            </figure>
+                        </div>
+
+                        <button class="nav next" onclick="nextSlide('men')">&#10095;</button>
+                    </div>
+                </section>
+                <section class="box2">
+                    <h2>Women Hair Styles</h2>
+                    <div class="slider" data-slider="women">
+                        <button class="nav prev" onclick="prevSlide('women')">&#10094;</button>
+
+                        <div class="slides">
+                            <figure class="slide">
+                                <img src="img/femalestyle/fhair.jpg" alt="Women Hair 1">
+                                <figcaption>Blond hair Dye!</figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="img/femalestyle/fhair2.jpg" alt="Women Hair 2">
+                                <figcaption> Hair Dye!</figcaption>
+                            </figure>
+                            <figure class="slide">
+                                <img src="img/femalestyle/fhair3.avif" alt="Women Hair 3">
+                                <figcaption> Hair Dye!</figcaption>
+                            </figure>
+                        </div>
+
+                        <button class="nav next" onclick="nextSlide('women')">&#10095;</button>
                     </div>
 
-                    <button class="nav next" onclick="nextSlide('men')">&#10095;</button>
-                </div>
-            </section>
-            <section class="box2">
-                <h2>Women Hair Styles</h2>
-                <div class="slider" data-slider="women">
-                    <button class="nav prev" onclick="prevSlide('women')">&#10094;</button>
-
-                    <div class="slides">
-                        <figure class="slide">
-                            <img src="img/femalestyle/fhair.jpg" alt="Women Hair 1">
-                            <figcaption>Blond hair Dye!</figcaption>
-                        </figure>
-                        <figure class="slide">
-                            <img src="img/femalestyle/fhair2.jpg" alt="Women Hair 2">
-                            <figcaption> Hair Dye!</figcaption>
-                        </figure>
-                        <figure class="slide">
-                            <img src="img/femalestyle/fhair3.avif" alt="Women Hair 3">
-                            <figcaption> Hair Dye!</figcaption>
-                        </figure>
-                    </div>
-
-                    <button class="nav next" onclick="nextSlide('women')">&#10095;</button>
-                </div>
-
-            </section>
-        </div>
+                </section>
+            </div>
         </fieldset>
         <div>
             <form id="collectdata">
