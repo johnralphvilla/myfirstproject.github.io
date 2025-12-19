@@ -158,3 +158,9 @@ main {
 .next { right: 0; }
 
 .nav:hover { background: violet; }
+
+
+main + section + div {
+    float: inline-start;
+
+}
