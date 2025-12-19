@@ -190,4 +190,7 @@ form{
     text-align:center;
     padding: 0px;
     margin: 10px;
+    background: linear-gradient( 80deg, blue, green);
+
 }
+
