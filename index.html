@@ -115,16 +115,16 @@
             <div>
                 <h1 class="border">Beard & Mustache styles</h1>
                 <script>
-                    const slider= {
+                    const sliders= {
                         beard: { index: 0 },
 
                     };
                     function showSlide(type) {
-                        const slider = querySelector(`[data.slider="${type}"] `);
+                        const sliders = querySelector(`[data.sliders="${type}"] `);
                         const slides = querySelector(`.slides`);
-                        const totalSlides = slider.querySelectorAll(`.slide`).length;
-                        if (slider[type].index >= totalSlides) slider[type].index = 0;
-                        if (slider[type].idex < 0) slider[type].index = totalSlides - 1;
+                        const totalSlides = sliders.querySelectorAll(`.slide`).length;
+                        if (sliders[type].index >= totalSlides) sliders[type].index = 0;
+                        if (sliders[type].idex < 0) slider[type].index = totalSlides - 1;
                         slides.style.transform = `translateX= (-${sliders[type].index * 260}px)`;
 
                     }
