@@ -26,7 +26,8 @@
                 <script>
                     const slider = {
                         men: { index: 0 },
-                        women: { index: 0 }
+                        women: { index: 0 },
+                        beard: { index: o}
 
 
                     };
@@ -56,6 +57,7 @@
                     // Optional: initialize sliders (in case you want to show the first slide explicitly)
                     showSlide('men');
                     showSlide('women');
+                    showSlide('beard');
                 </script>
 
 
@@ -114,7 +116,7 @@
         <fieldset>
             <div>
                 <h1 class="border">Beard & Mustache styles</h1>
-               <!--
+                <!--
                <script>
                     const sliders = {
                         beard: { index: 0 },
@@ -155,10 +157,10 @@
 
                 <div class="slider" data-slider="beard">
                     <button class="nav prev" onclick="prevSlide('beard')">&#10094;</button>
-                    <div class="slides" >
-                        
-                        <figure >
-                           
+                    <div class="slides">
+
+                        <figure>
+
                             <img src="" alt="option 1" width="250px" height="250">
                             <figcaption>Fade</figcaption>
                         </figure>
@@ -178,7 +180,7 @@
                             <img src="" alt="option 1" width="250px" height="250">
                             <figcaption>Fade</figcaption>
                         </figure>
-                        <button class="nav next" onclick="nextSlide('beard')" > &#10095;</button>
+                        <button class="nav next" onclick="nextSlide('beard')"> &#10095;</button>
                     </div>
                 </div>
             </div>
