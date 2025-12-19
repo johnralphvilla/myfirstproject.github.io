@@ -1,282 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>My First Project</title>
+    <title>Care Salon</title>
     <link rel="stylesheet" href="css folders/main.css">
 </head>
 
 <body>
-    <header>
-        <h1>Care Salon</h1>
-        <h2>Created By Ralph Villa</h2>
 
-        <nav>
-            <ul>
-                <li> <a href="datatables/data.html">Check for Weekly Availabilty Appoinments </a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <h1>Care Salon</h1>
+    <h2>Created By Ralph Villa</h2>
 
-    <main>
-        <fieldset>
-            <div>
-               
-                <script>
-                    const sliders = {
-                        men: { index: 0 },
-                        women: { index: 0 },
-                        beard: { index: 0 }
+    <nav>
+        <ul>
+            <li>
+                <a href="datatables/data.html">Check Weekly Appointment Availability</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
+<main>
 
-                    };
+    <!-- MEN HAIR -->
+    <section class="service-section">
+        <h2 class="border">Men’s Hair Cut Styles</h2>
 
-                    function showSlide(type) {
-                        const slider = document.querySelector(`[data-slider="${type}"]`);
-                        const slides = slider.querySelector('.slides');
-                        const totalSlides = slider.querySelectorAll('.slide').length;
+        <div class="slider" data-slider="men">
+            <button class="nav prev" onclick="prevSlide('men')">&#10094;</button>
 
-                        // Ensure index wraps around
-                        if (sliders[type].index >= totalSlides) sliders[type].index = 0;
-                        if (sliders[type].index < 0) sliders[type].index = totalSlides - 1;
-
-                        slides.style.transform = `translateX(-${sliders[type].index * 260}px)`;
-                    }
-
-                    function nextSlide(type) {
-                        sliders[type].index++;
-                        showSlide(type);
-                    }
-
-                    function prevSlide(type) {
-                        sliders[type].index--;
-                        showSlide(type);
-                    }
-
-                    // Optional: initialize sliders (in case you want to show the first slide explicitly)
-                    showSlide('men');
-                    showSlide('women');
-                    showSlide('beard');
-                </script>
-
-
-
-                <section class="box">
-                    <h2 class="border">Mens Hair Cut Style</h2>
-
-                    <div class="slider" data-slider="men" class="box">
-                        <button class="nav prev" onclick="prevSlide('men')">&#10094;</button>
-
-                        <div class="slides">
-
-                            <figure class="slide">
-                                <img src="img/malehaircuts/mhair.jpg" alt="Men Hair 1" width="250px" height="250">
-                                <figcaption>Fade</figcaption>
-                            </figure>
-                            <figure class="slide">
-                                <img src="img/malehaircuts/R.jpg" alt="Men Hair 2 " width="250px" height="250px">
-                                <figcaption>line</figcaption>
-                            </figure>
-                            <figure class="slide">
-                                <img src="img/malehaircuts/mhair3.png" alt="Men Hair 3" width="250px" height="250px">
-                                <figcaption> Fresh cut</figcaption>
-                            </figure>
-                        </div>
-
-                        <button class="nav next" onclick="nextSlide('men')">&#10095;</button>
-                    </div>
-                </section>
-                           </div>
-        </fieldset>
-        <fieldset>
-
-
-
-             <section class="box2">
-                    <h2 class="border">Women Hair Styles</h2>
-                    <div class="slider" data-slider="women">
-                        <button class="nav prev" onclick="prevSlide('women')">&#10094;</button>
-
-                        <div class="slides">
-                            <figure class="slide">
-                                <img src="img/femalestyle/fhair.jpg" alt="Women Hair 1">
-                                <figcaption>Blond hair Dye!</figcaption>
-                            </figure>
-                            <figure class="slide">
-                                <img src="img/femalestyle/fhair2.jpg" alt="Women Hair 2">
-                                <figcaption> Hair Dye!</figcaption>
-                            </figure>
-                            <figure class="slide">
-                                <img src="img/femalestyle/fhair3.avif" alt="Women Hair 3">
-                                <figcaption> Hair Dye!</figcaption>
-                            </figure>
-                        </div>
-
-                        <button class="nav next" onclick="nextSlide('women')">&#10095;</button>
-                    </div>
-
-                </section>
-        </fieldset>
-        <fieldset>
-            <div class="box2">
-                <h1 class="border">Beard & Mustache styles</h1>
-
-
-                <div class="slider" data-slider="beard">
-                    <button class="nav prev" onclick="prevSlide('beard')">&#10094;</button>
-                    <div class="slides">
-
-                        <figure class="slide" ">
-
-                            <img src="img/beards/b2.webp" alt="option 1" width="250px" height="250px">
-                            <figcaption>option 1</figcaption>
-                        </figure>
-                        <figure class="slide" >
-                            <img src="img/beards/b1.jpeg" alt="option 2" width="250px" height="250px">
-                            <figcaption>option 2</figcaption>
-                        </figure>
-                        <figure class="slide" >
-                            <img src="img/beards/b3.webp" alt="option 3" width="250px" height="250px">
-                            <figcaption>option 3</figcaption>
-                        </figure>
-                        <figure class="slide" >
-                            <img src="img/beards/b5.webp" alt="option 4" width="250px" height="250px">
-                            <figcaption>option 4</figcaption>
-                        </figure>
-                        <figure class="slide">
-                            <img src="img/beards/b4.webp" alt="option 5" width="250px" height="250px">
-                            <figcaption>Option 5</figcaption>
-                        </figure>
-
-                    </div>
-                    <button class="nav next" onclick="nextSlide('beard')"> &#10095;</button>
-                </div>
-            </div>
-
-
-
-        </fieldset>
-        <fieldset>
-            <h1 class="border"> Nails Selection </h1>
-            <div class="box3">
-                <figure>
-                    <img src="img/nail/nail1.webp" alt=" option 1" width="250px">
-                    <figcaption> Option 1 </figcaption>
+            <div class="slides">
+                <figure class="slide">
+                    <img src="img/malehaircuts/mhair.jpg" alt="Fade" width="250" height="250">
+                    <figcaption>Fade</figcaption>
                 </figure>
-            </div>
-            <div class="box3">
-                <figure>
-                    <img src="img/nail/nail2.jpg" alt="option 2" width=" 250px" height="250px">
-                    <figcaption> Option 2 </figcaption>
+
+                <figure class="slide">
+                    <img src="img/malehaircuts/R.jpg" alt="Line Cut" width="250" height="250">
+                    <figcaption>Line Cut</figcaption>
                 </figure>
-            </div>
-            <div class="box3">
-                <figure>
-                    <img src="img/nail/nail3.jpg" alt="option 3" width="250px" height="250px">
-                    <figcaption> option 3 </figcaption>
-                </figure>
-            </div>
-            <div class="box3">
-                <figure>
-                    <img src="img/nail/f4.jpg" alt="option 4" width="250px" height="250px">
-                    <figcaption> option 4</figcaption>
+
+                <figure class="slide">
+                    <img src="img/malehaircuts/mhair3.png" alt="Fresh Cut" width="250" height="250">
+                    <figcaption>Fresh Cut</figcaption>
                 </figure>
             </div>
 
-            <div class="box3">
-                <figure>
-                    <img src="img/nail/f5.webp" alt="option 4" width="250px" height="250px">
-                    <figcaption> option 5</figcaption>
-                </figure>
-            </div>
-            <div class="box3">
-                <figure>
-                    <img src="img/nail/f6.webp" alt="option 4" width="250px" height="250px">
-                    <figcaption> option 6 </figcaption>
-                </figure>
-            </div>
-
-
-
-
-
-        </fieldset>
-        <div>
-            <form id="collectdata">
-                <fieldset>
-                    <legend>Book Your Appoinment Today!(<span>requires*</span>)</legend>
-                    <p>Your Name:</p>
-                    <input type="text" id="fname" name="fname" placeholder="First name" required>
-                    <input type="text" id="lname" name="lname" placeholder="Last name" required><br><br>
-
-                    <p>Your Email:</p>
-                    <input type="email" id="email" name="email" required><br><br>
-
-                    <lable> Time for Appomients 8:00 am - 8: 00 pm</lable>
-                    <select id="time" required>
-                        <option value="">Minimum 2hour</option>
-                        <option value="8am-10am"> 8am-10am</option>
-                        <option value="10am-12pm">10am-12pm</option>
-                        <option value="12-2pm">not available</option>
-                        <option value="2pm-4pm">2pm-4pm</option>
-                        <option value="4pm-6m ">4pm-6m</option>
-                        <option value="6pm-8pm ">6pm-8pm</option>
-                        <option value="contact">Contact us for private service</option>
-
-
-
-                    </select>
-                    <br><br>
-
-
-                    <label>Reason for Appoiments</label>
-                    <select id="subjects" required>
-                        <option value="">Please Select One</option>
-                        <option value="Nail">Nail </option>
-                        <option value="Hair">Hair </option>
-                        <option value="Hair&Nail">Hair&Nail</option>
-                    </select><br><br>
-
-                    <label for="comments">Comments</label><br>
-                    <textarea id="comments" rows="5" cols="50"></textarea><br><br>
-
-                    <button type="submit">Submit</button>
-                </fieldset>
-            </form>
-
-            <script>
-                document.getElementById("collectdata").addEventListener("submit", function (e) {
-                    e.preventDefault();
-
-                    // Get existing data array from localStorage or create new
-                    let allData = JSON.parse(localStorage.getItem("allFormData")) || [];
-
-                    // Collect form data
-                    const data = {
-                        fname: document.getElementById("fname").value,
-                        lname: document.getElementById("lname").value,
-                        email: document.getElementById("email").value,
-                        time: document.getElementById("time").value,
-                        subjects: document.getElementById("subjects").value,
-                        comments: document.getElementById("comments").value
-                    };
-
-                    // Add new data to array
-                    allData.push(data);
-
-                    // Save updated array
-                    localStorage.setItem("allFormData", JSON.stringify(allData));
-
-                    // Redirect to table page
-                    window.location.href = "datatables/data.html";
-                });
-            </script>
+            <button class="nav next" onclick="nextSlide('men')">&#10095;</button>
         </div>
-    </main>
+    </section>
 
+    <!-- WOMEN HAIR -->
+    <section class="service-section">
+        <h2 class="border">Women Hair Styles</h2>
 
+        <div class="slider" data-slider="women">
+            <button class="nav prev" onclick="prevSlide('women')">&#10094;</button>
+
+            <div class="slides">
+                <figure class="slide">
+                    <img src="img/femalestyle/fhair.jpg" alt="Blonde Dye">
+                    <figcaption>Blonde Dye</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="img/femalestyle/fhair2.jpg" alt="Hair Dye">
+                    <figcaption>Hair Dye</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="img/femalestyle/fhair3.avif" alt="Hair Style">
+                    <figcaption>Hair Style</figcaption>
+                </figure>
+            </div>
+
+            <button class="nav next" onclick="nextSlide('women')">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- BEARD -->
+    <section class="service-section">
+        <h2 class="border">Beard & Mustache Styles</h2>
+
+        <div class="slider" data-slider="beard">
+            <button class="nav prev" onclick="prevSlide('beard')">&#10094;</button>
+
+            <div class="slides">
+                <figure class="slide">
+                    <img src="img/beards/b2.webp" alt="Option 1" width="250" height="250">
+                    <figcaption>Option 1</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="img/beards/b1.jpeg" alt="Option 2" width="250" height="250">
+                    <figcaption>Option 2</figcaption>
+                </figure>
+
+                <figure class="slide">
+                    <img src="img/beards/b3.webp" alt="Option 3" width="250" height="250">
+                    <figcaption>Option 3</figcaption>
+                </figure>
+            </div>
+
+            <button class="nav next" onclick="nextSlide('beard')">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- NAILS -->
+    <section class="service-section">
+        <h2 class="border">Nail Selection</h2>
+
+        <div class="nail-grid">
+            <figure>
+                <img src="img/nail/nail1.webp" alt="Nail Option 1" width="250">
+                <figcaption>Option 1</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/nail/nail2.jpg" alt="Nail Option 2" width="250">
+                <figcaption>Option 2</figcaption>
+            </figure>
+
+            <figure>
+                <img src="img/nail/nail3.jpg" alt="Nail Option 3" width="250">
+                <figcaption>Option 3</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- FORM -->
+    <form id="collectdata">
+        <fieldset>
+            <legend>Book Your Appointment (Required*)</legend>
+
+            <label>First Name</label>
+            <input type="text" id="fname" required>
+
+            <label>Last Name</label>
+            <input type="text" id="lname" required>
+
+            <label>Email</label>
+            <input type="email" id="email" required>
+
+            <label>Appointment Time</label>
+            <select id="time" required>
+                <option value="">Select Time</option>
+                <option>8am - 10am</option>
+                <option>10am - 12pm</option>
+                <option>2pm - 4pm</option>
+                <option>4pm - 6pm</option>
+                <option>6pm - 8pm</option>
+            </select>
+
+            <label>Service</label>
+            <select id="subjects" required>
+                <option value="">Select Service</option>
+                <option>Nail</option>
+                <option>Hair</option>
+                <option>Hair & Nail</option>
+            </select>
+
+            <label>Comments</label>
+            <textarea id="comments" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+</main>
+
+<script>
+const sliders = {
+    men: { index: 0 },
+    women: { index: 0 },
+    beard: { index: 0 }
+};
+
+function showSlide(type) {
+    const slider = document.querySelector(`[data-slider="${type}"]`);
+    const slides = slider.querySelector('.slides');
+    const total = slider.querySelectorAll('.slide').length;
+
+    if (sliders[type].index >= total) sliders[type].index = 0;
+    if (sliders[type].index < 0) sliders[type].index = total - 1;
+
+    slides.style.transform = `translateX(-${sliders[type].index * 260}px)`;
+}
+
+function nextSlide(type) {
+    sliders[type].index++;
+    showSlide(type);
+}
+
+function prevSlide(type) {
+    sliders[type].index--;
+    showSlide(type);
+}
+
+showSlide('men');
+showSlide('women');
+showSlide('beard');
+
+document.getElementById("collectdata").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let allData = JSON.parse(localStorage.getItem("allFormData")) || [];
+
+    allData.push({
+        fname: fname.value,
+        lname: lname.value,
+        email: email.value,
+        time: time.value,
+        subjects: subjects.value,
+        comments: comments.value
+    });
+
+    localStorage.setItem("allFormData", JSON.stringify(allData));
+    window.location.href = "datatables/data.html";
+});
+</script>
 
 </body>
-
 </html>
