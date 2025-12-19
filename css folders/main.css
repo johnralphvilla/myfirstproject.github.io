@@ -165,7 +165,7 @@ main {
     
     border: 2px solid black;
     padding: 10px ;
-    margin:10px 0 10px 100px;
+    margin:10px 0 10px 200px;
     height: 450px ;
     width: 450px;
     text-align: center;
@@ -175,7 +175,7 @@ main {
     float: right;
      border: 2px solid black;
     padding: 10px ;
-    margin:10px 100px 10px 0;
+    margin:10px 200px 10px 0;
     height: 450px ;
     width: 450px;
     text-align: center;
