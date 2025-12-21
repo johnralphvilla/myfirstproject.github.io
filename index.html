@@ -138,26 +138,26 @@
 
 
         <!-- FORM -->
-        <form id="collectdata">
+        <form id="collectdata" method="POST" actrion="submit.php">
             <fieldset>
                 <legend>Book Your Appointment (Required*)</legend>
 
                 <label>First Name</label>
-                <input type="text" id="fname" required>
+                <input type="text" name="fname" id="fname" required>
 
                 <br>
                 <br>
                 <label>Last Name</label>
-                <input type="text" id="lname" required>
+                <input type="text"  name="lname" id="lname" required>
 
                 <br>
                 <br>
 
                 <label>Email</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email"  name="email" required>
 
                 <label>Appointment Time</label>
-                <select id="time" required>
+                <select id="time" name="time" required>
                     <option value="">Select Time</option>
                     <option>8am - 10am</option>
                     <option>10am - 12pm</option>
@@ -168,7 +168,7 @@
                 <br>
                 <br>
                 <label>Service</label>
-                <select id="subjects" required>
+                <select id="subjects" name="subjects" required>
                     <option value="">Select Service</option>
                     <option>Nail</option>
                     <option>Hair</option>
@@ -218,7 +218,9 @@
         showSlide('beard');
         showSlide('nail');
 
-        document.getElementById("collectdata").addEventListener("submit", function (e) {
+       
+    </script>
+    <!-- document.getElementById("collectdata").addEventListener("submit", function (e) {
             e.preventDefault();
 
             let allData = JSON.parse(localStorage.getItem("allFormData")) || [];
@@ -234,9 +236,7 @@
 
             localStorage.setItem("allFormData", JSON.stringify(allData));
             window.location.href = "datatables/data.html";
-        });
-    </script>
-
+        });-->
 </body>
 
 </html>>
