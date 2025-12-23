@@ -1,6 +1,6 @@
 header{
-    background-image:url ("img/background/gg.webp");
-    background-color: blueviolet;
+    background:url ("img/background/gg.webp") ;
+    
     background-size: cover;
     background-repeat: no-repeat;
 
