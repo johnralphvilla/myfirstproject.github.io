@@ -147,15 +147,20 @@
 
                 <br>
                 <br>
+                <hr>
                 <label>Last Name</label>
                 <input type="text"  name="lname" id="lname" required>
 
                 <br>
                 <br>
-
+                <hr>
                 <label>Email</label>
                 <input type="email" id="email"  name="email" required>
-
+                <br>
+                <br>
+                <hr>
+                <label> phone</label>
+                <input tel="phone" pattern="[0-9] {3} {3} {4}">
                 <label>Appointment Time</label>
                 <select id="time" name="time" required>
                     <option value="">Select Time</option>
@@ -220,23 +225,7 @@
 
        
     </script>
-    <!-- document.getElementById("collectdata").addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            let allData = JSON.parse(localStorage.getItem("allFormData")) || [];
-
-            allData.push({
-                fname: fname.value,
-                lname: lname.value,
-                email: email.value,
-                time: time.value,
-                subjects: subjects.value,
-                comments: comments.value
-            });
-
-            localStorage.setItem("allFormData", JSON.stringify(allData));
-            window.location.href = "datatables/data.html";
-        });-->
+    
 </body>
 
 </html>>
